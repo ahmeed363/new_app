@@ -1,0 +1,153 @@
+{
+ "creation": "2020-12-26 16:45:20.628039",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "posting_date",
+  "employee",
+  "employee_name",
+  "car_number",
+  "car_type",
+  "columnbreak0",
+  "exit_date",
+  "exit_time",
+  "return_time",
+  "exit_destination",
+  "exit_reason",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "car_number",
+   "fieldtype": "Data",
+   "label": "Car Number",
+   "reqd": 1
+  },
+  {
+   "fieldname": "car_type",
+   "fieldtype": "Link",
+   "label": "Car Type",
+   "options": "Car Type",
+   "reqd": 1
+  },
+  {
+   "fieldname": "exit_date",
+   "fieldtype": "Date",
+   "label": "Exit Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "exit_time",
+   "fieldtype": "Time",
+   "label": "Exit Time",
+   "reqd": 1
+  },
+  {
+   "fieldname": "return_time",
+   "fieldtype": "Time",
+   "label": "Return Time",
+   "reqd": 1
+  },
+  {
+   "fieldname": "exit_destination",
+   "fieldtype": "Data",
+   "label": "Exit Destination",
+   "reqd": 1
+  },
+  {
+   "fieldname": "exit_reason",
+   "fieldtype": "Data",
+   "label": "Exit Reason",
+   "reqd": 1
+  },
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Employee",
+   "options": "Employee",
+   "reqd": 1,
+   "search_index": 1
+  },
+  {
+   "fetch_from": "employee.employee_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Read Only",
+   "in_global_search": 1,
+   "label": "Employee Name",
+   "reqd": 1
+  },
+  {
+   "default": "Today",
+   "fieldname": "posting_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Posting Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Exit Car",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "columnbreak0",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "is_submittable": 1,
+ "modified": "2020-12-26 23:29:42.829506",
+ "modified_by": "Administrator",
+ "module": "newAhmed",
+ "name": "Exit Car",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR User",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Employee",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

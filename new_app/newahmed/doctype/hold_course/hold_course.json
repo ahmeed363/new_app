@@ -1,0 +1,100 @@
+{
+ "autoname": "field:course_title",
+ "creation": "2020-12-27 10:38:15.586053",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "posting_date",
+  "course_title",
+  "period_course",
+  "place_course",
+  "course_supervisor",
+  "budget",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "default": "Today",
+   "fieldname": "posting_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Posting Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "course_title",
+   "fieldtype": "Data",
+   "label": "Course Title",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "period_course",
+   "fieldtype": "Data",
+   "label": "Period Course",
+   "reqd": 1
+  },
+  {
+   "fieldname": "place_course",
+   "fieldtype": "Data",
+   "label": "Place Course",
+   "reqd": 1
+  },
+  {
+   "fieldname": "course_supervisor",
+   "fieldtype": "Data",
+   "label": "Course Supervisor",
+   "reqd": 1
+  },
+  {
+   "fieldname": "budget",
+   "fieldtype": "Currency",
+   "label": "Estimated Budget",
+   "reqd": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Hold Course",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "is_submittable": 1,
+ "modified": "2020-12-27 10:45:11.398860",
+ "modified_by": "Administrator",
+ "module": "newAhmed",
+ "name": "Hold Course",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "All",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

@@ -1,0 +1,93 @@
+{
+ "autoname": "field:mohafiz_name",
+ "creation": "2020-12-26 22:35:03.416173",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "posting_date",
+  "mohafiz_name",
+  "civil_no",
+  "job",
+  "residence",
+  "mobile",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "mohafiz_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Mohafiz Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "civil_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Civil No",
+   "reqd": 1
+  },
+  {
+   "fieldname": "job",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Job",
+   "reqd": 1
+  },
+  {
+   "fieldname": "residence",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Residence",
+   "reqd": 1
+  },
+  {
+   "fieldname": "mobile",
+   "fieldtype": "Data",
+   "label": "Mobile",
+   "reqd": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Mohafiz Approval",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "default": "Today",
+   "fieldname": "posting_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Posting Date",
+   "reqd": 1
+  }
+ ],
+ "is_submittable": 1,
+ "modified": "2020-12-26 23:33:27.088499",
+ "modified_by": "Administrator",
+ "module": "newAhmed",
+ "name": "Mohafiz Approval",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

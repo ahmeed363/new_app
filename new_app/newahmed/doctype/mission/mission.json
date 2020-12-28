@@ -1,0 +1,127 @@
+{
+ "autoname": "field:applicant_name",
+ "creation": "2020-12-27 11:56:55.227412",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "posting_date",
+  "applicant_name",
+  "job",
+  "administration",
+  "place",
+  "break_column",
+  "date",
+  "time",
+  "mission_end_date",
+  "mission_purpose",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "default": "Today",
+   "fieldname": "posting_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Posting Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "applicant_name",
+   "fieldtype": "Data",
+   "label": "Applicants Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "job",
+   "fieldtype": "Data",
+   "label": "Job",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "administration",
+   "fieldtype": "Data",
+   "label": "Administration",
+   "reqd": 1
+  },
+  {
+   "fieldname": "place",
+   "fieldtype": "Data",
+   "label": "Place",
+   "reqd": 1
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "time",
+   "fieldtype": "Time",
+   "label": "Time",
+   "reqd": 1
+  },
+  {
+   "fieldname": "mission_end_date",
+   "fieldtype": "Date",
+   "label": "Mission End Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "mission_purpose",
+   "fieldtype": "Data",
+   "label": "Mission Purpose",
+   "reqd": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Mission",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "break_column",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "is_submittable": 1,
+ "modified": "2020-12-27 12:03:06.304259",
+ "modified_by": "Administrator",
+ "module": "newAhmed",
+ "name": "Mission",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "All",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

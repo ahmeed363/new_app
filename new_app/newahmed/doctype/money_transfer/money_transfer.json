@@ -1,0 +1,122 @@
+{
+ "autoname": "field:project_name",
+ "creation": "2020-12-27 00:07:49.463875",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "posting_date",
+  "project_name",
+  "license_number",
+  "country",
+  "executing_agency",
+  "break_column1",
+  "currency_exchange",
+  "amount_transferred",
+  "administrative_ratio",
+  "ways_collect_money",
+  "project_belongs",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "default": "Today",
+   "fieldname": "posting_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Posting Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "project_name",
+   "fieldtype": "Data",
+   "label": "Project Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "license_number",
+   "fieldtype": "Data",
+   "label": "License Number",
+   "reqd": 1
+  },
+  {
+   "fieldname": "country",
+   "fieldtype": "Data",
+   "label": "Country",
+   "reqd": 1
+  },
+  {
+   "fieldname": "executing_agency",
+   "fieldtype": "Data",
+   "label": "Executing Agency",
+   "reqd": 1
+  },
+  {
+   "fieldname": "currency_exchange",
+   "fieldtype": "Data",
+   "label": "Currency Exchanges",
+   "reqd": 1
+  },
+  {
+   "fieldname": "amount_transferred",
+   "fieldtype": "Data",
+   "label": "Amount Transferred",
+   "reqd": 1
+  },
+  {
+   "fieldname": "administrative_ratio",
+   "fieldtype": "Data",
+   "label": "Administrative Ratio",
+   "reqd": 1
+  },
+  {
+   "fieldname": "ways_collect_money",
+   "fieldtype": "Data",
+   "label": "Ways Collect  Money",
+   "reqd": 1
+  },
+  {
+   "fieldname": "project_belongs",
+   "fieldtype": "Data",
+   "label": "Project Belongs",
+   "reqd": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Money Transfer",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "break_column1",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "is_submittable": 1,
+ "modified": "2020-12-27 00:39:50.854819",
+ "modified_by": "Administrator",
+ "module": "newAhmed",
+ "name": "Money Transfer",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

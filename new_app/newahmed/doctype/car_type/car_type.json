@@ -1,0 +1,55 @@
+{
+ "autoname": "field:car_type",
+ "creation": "2020-12-26 17:01:41.986910",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "car_type",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "car_type",
+   "fieldtype": "Data",
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Car Type",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Car Type",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "modified": "2020-12-26 17:11:24.128751",
+ "modified_by": "Administrator",
+ "module": "newAhmed",
+ "name": "Car Type",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

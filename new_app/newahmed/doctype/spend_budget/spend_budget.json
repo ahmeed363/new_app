@@ -1,0 +1,100 @@
+{
+ "autoname": "field:project_name",
+ "creation": "2020-12-27 12:34:02.383491",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "posting_date",
+  "project_name",
+  "project_budget",
+  "project_details",
+  "administration",
+  "project_supervisor",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "default": "Today",
+   "fieldname": "posting_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Posting Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "project_name",
+   "fieldtype": "Data",
+   "label": "Project Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "project_budget",
+   "fieldtype": "Currency",
+   "label": "Project Budget",
+   "reqd": 1
+  },
+  {
+   "fieldname": "project_details",
+   "fieldtype": "Data",
+   "label": "Project Details",
+   "reqd": 1
+  },
+  {
+   "fieldname": "administration",
+   "fieldtype": "Data",
+   "label": "Administration",
+   "reqd": 1
+  },
+  {
+   "fieldname": "project_supervisor",
+   "fieldtype": "Data",
+   "label": "Project Supervisor",
+   "reqd": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Spend Budget",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "is_submittable": 1,
+ "modified": "2020-12-27 12:38:48.268653",
+ "modified_by": "Administrator",
+ "module": "newAhmed",
+ "name": "Spend Budget",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "All",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}
